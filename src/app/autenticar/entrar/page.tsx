@@ -1,5 +1,4 @@
-import Link from "next/link";
-import FormularioLogin from "../../../components/actions/formularioLogin";
+import FormularioLogin from "@/src/components/actions/formularios/formularioLogin";
 
 export default function Entrar(){
     return(

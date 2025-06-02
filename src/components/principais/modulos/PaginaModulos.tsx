@@ -3,6 +3,7 @@ import jwt from "jsonwebtoken";
 import BlocoGrupo from "./BlocoGrupo";
 import Main from "../main";
 import { Suspense } from "react";
+import { buscarMenuId } from "@/src/utils/apis/api";
 
 type Modulo = {
   id: number;
@@ -23,11 +24,8 @@ export default async function PaginaModulos() {
   const modulos: Modulo[] = [];
 
   for (const id of ids) {
-    const res = await fetch(`http://localhost:3001/api/sistema/menu/${id}`, { cache: "force-cache" });
-    if (res.ok) {
-      const response = await res.json();
-      modulos.push(response);
-    }
+    const response = await buscarMenuId(id)
+    modulos.push(response);
   }
 
   const agrupados: Record<string, Modulo[]> = {};

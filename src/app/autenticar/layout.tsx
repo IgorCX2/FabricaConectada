@@ -10,7 +10,7 @@ export default function LayoutConta({children}: {children: React.ReactNode}){
                     {children}
                     <Link href={"cadastrar"}>Não tem acesso? <u className="font-bold">peça seu login =)</u></Link>
                 </section>
-                <section className="rounded-3xl bg-black w-full hidden xl:flex"/>
+                <section className="rounded-3xl bg-black w-full hidden xl:flex relative"><Image src="/empresa/banner.jpg" alt="BannerPrincipal" fill className="object-contain"/></section>
             </main>
         </body>
     )

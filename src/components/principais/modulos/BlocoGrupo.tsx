@@ -19,9 +19,7 @@ export default function BlocoGrupo({ grupo, modulos }: { grupo: string; modulos:
               <p>{modulo.descricao}</p>
             </div>
             <div className="text-right">
-              <Link href={'/'+grupo+'/'+grupo[0].toUpperCase()+modulo.id}  className="py-2 px-5 text-white font-bold rounded-lg"style={{ backgroundColor: modulo.cor }}>
-                Acessar
-              </Link>
+              <Link href={'/modulos/'+grupo+'/'+grupo[0].toUpperCase()+modulo.id}  className="py-2 px-5 text-white font-bold rounded-lg"style={{ backgroundColor: modulo.cor }}>Acessar</Link>
             </div>
           </div>
         ))}

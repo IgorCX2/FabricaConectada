@@ -11,7 +11,7 @@ export default async function Main({ children, titulo, descricao }: MainPropos) 
   let descricaoModulo: string[] = [titulo, descricao];
 
   return (
-    <main className="ml-10 py-5 pl-15 pr-30">
+    <main className="ml-10 py-5 pl-15 pr-10 2xl:pr-30 ">
       <Cabecalho descricaoModulo={descricaoModulo} />
       {children}
     </main>

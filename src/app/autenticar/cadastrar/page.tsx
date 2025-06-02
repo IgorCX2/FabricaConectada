@@ -1,4 +1,4 @@
-import FormularioCadastro from "../../../components/actions/formularioCadastro";
+import FormularioCadastro from "@/src/components/actions/formularios/formularioCadastro";
 
 export default function Cadastrar(){
     return(

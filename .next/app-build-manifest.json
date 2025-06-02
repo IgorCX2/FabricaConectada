@@ -6,6 +6,11 @@
       "static/css/app/layout.css",
       "static/chunks/app/layout.js"
     ],
+    "/not-found": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/not-found.js"
+    ],
     "/autenticar/layout": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
@@ -21,11 +26,6 @@
       "static/chunks/main-app.js",
       "static/chunks/app/(aplicacao)/layout.js"
     ],
-    "/(aplicacao)/[...modulos]/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/(aplicacao)/[...modulos]/page.js"
-    ],
     "/(aplicacao)/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
@@ -35,6 +35,11 @@
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/(aplicacao)/modulos/page.js"
+    ],
+    "/(aplicacao)/modulos/[...modulos]/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/(aplicacao)/modulos/[...modulos]/page.js"
     ]
   }
 }

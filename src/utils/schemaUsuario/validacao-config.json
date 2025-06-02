@@ -1,0 +1,20 @@
+{
+  "codigo": {
+    "minLength": 5,
+    "message": "Código deve ter no mínimo 5 caracteres"
+  },
+  "senha": {
+    "minLength": 6,
+    "requireUpperCase": true,
+    "requireLowerCase": true,
+    "requireNumber": true,
+    "requireSpecialChar": true,
+    "message": {
+      "minLength": "Mínimo 6 caracteres",
+      "upper": "Letra maiúscula",
+      "lower": "Letra minúscula",
+      "number": "Número",
+      "special": "Caractere especial"
+    }
+  }
+}

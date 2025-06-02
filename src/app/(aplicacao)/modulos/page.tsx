@@ -1,6 +1,5 @@
+import PaginaModulos from "@/src/components/principais/modulos/PaginaModulos";
 import { Suspense } from "react";
-import PaginaModulos from "../../../components/principais/modulos/PaginaModulos";
-
 
 export default function Modulos() {
     return (
